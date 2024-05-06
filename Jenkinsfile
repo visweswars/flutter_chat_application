@@ -8,9 +8,9 @@ pipeline {
                 git 'https://github.com/visweswars/flutter_chat_application.git'
                 
                 // Build Flutter app
-                sh 'flutter clean'
-                sh 'flutter pub get'
-                sh 'flutter build apk' // or 'flutter build ios' for iOS
+                nohup 'flutter clean'
+                nohup'flutter pub get'
+                nohup 'flutter build apk' // or 'flutter build ios' for iOS
             }
         }
     }
